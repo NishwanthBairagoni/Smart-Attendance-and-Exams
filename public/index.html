@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus | Admin Dashboard</title>
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">SC</div>
+                <h2>Smart Campus</h2>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="students">
+                    <span class="icon">👥</span> Students
+                </button>
+                <button class="nav-item" data-tab="reports">
+                    <span class="icon">📊</span> Report Cards
+                </button>
+                <button class="nav-item" data-tab="attendance">
+                    <span class="icon">📅</span> Attendance
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Status: <span class="status-indicator online"></span> Connected</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1 id="page-title">Student Directory</h1>
+                <div class="actions">
+                    <button class="btn-primary" onclick="alert('Use the CLI to add students for now!')">+ Add Student</button>
+                </div>
+            </header>
+
+            <div id="content-area" class="content-area">
+                <!-- Content will be injected here via JS -->
+                <div class="loading-spinner"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
